@@ -45,9 +45,23 @@
 
 ## 8章
 
+- データベース検索の条件設定
+- SQL文をダイレクトに書く方法
+
+※ 8章6で、fetchAll()が記載されている箇所があるが、連想配列を指定する引数がないのでエラーになった。
+
+（誤)
+
+    $persons = $connection->query($query)->fetchAll();
+
+
+（正)
+
+    $persons = $connection->query($query)->fetchAll('assoc');
 
 ## 9章
 
+- ページ操作の基本、テンプレートの作り方
 
 ## 10章
 
