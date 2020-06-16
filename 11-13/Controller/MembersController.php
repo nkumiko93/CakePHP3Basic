@@ -7,6 +7,7 @@ use Cake\Validation\Validator;
  
 class MembersController extends AppController
  {
+/*
     public $paginate = [
         'limit' => 5,
         'order' => [
@@ -18,18 +19,17 @@ class MembersController extends AppController
         'Paginator' => ['templates' => 
             'paginator-templates']
     ];
+*/
 
     public function initialize()
     {
         parent::initialize();
-        $this->loadComponent('Paginator');
+//        $this->loadComponent('Paginator');
     }
-
     public function index()
     {
         $this->set('members', $this->paginate($this->Members));
         $this->set('_serialize', ['members']);
-//        $this->set('members', $this->paginate());
     }
 
     public function add()

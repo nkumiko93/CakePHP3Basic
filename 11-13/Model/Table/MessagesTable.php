@@ -1,7 +1,7 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Member;
+use App\Model\Entity\Message;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -25,8 +25,8 @@ class MessagesTable extends Table
         $this->setTable('messages');
         $this->setDisplayField('title');
         $this->setPrimaryKey('id');
- 
-        $this->belongsTo('Messages')
+
+        $this->belongsTo('Members')
             ->setForeignKey('members_id')
             ->setJoinType('INNER');
     }
@@ -44,17 +44,15 @@ class MessagesTable extends Table
             ->allowEmptyString('id', null, 'create');
 
         $validator
-            ->scalar('name')
-            ->maxLength('name', 255)
-            ->requirePresence('name', 'create')
-            ->notEmptyString('name');
+            ->scalar('title')
+            ->maxLength('title', 255)
+            ->requirePresence('title', 'create')
+            ->notEmptyString('title');
 
         $validator
-            ->scalar('mail')
-            ->maxLength('mail', 255)
-//            ->requirePresence('mail', 'create')
-//            ->notEmptyString('mail');
-            ->allowEmptyString('mail');
+            ->scalar('comment')
+            ->maxLength('comment', 255)
+            ->allowEmptyString('comment');
 
         return $validator;
     }

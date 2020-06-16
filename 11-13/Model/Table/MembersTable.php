@@ -52,8 +52,6 @@ class MembersTable extends Table
         $validator
             ->scalar('mail')
             ->maxLength('mail', 255)
-//            ->requirePresence('mail', 'create')
-//            ->notEmptyString('mail');
             ->allowEmptyString('mail');
 
         return $validator;

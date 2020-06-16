@@ -4,7 +4,7 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Person Entity
+ * Message Entity.
  *
  * @property int $id
  * @property int $members_id
