@@ -1,0 +1,57 @@
+[nagayamakumikonoMacBook-Pro:mycakeprj kumiko$ bin/cake bake all samples
+Bake All
+---------------------------------------------------------------
+One moment while associations are detected.
+
+Baking table class for Samples...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Model/Table/SamplesTable.php
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Model/Table/SamplesTable.php`
+
+Baking entity class for Sample...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Model/Entity/Sample.php
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Model/Entity/Sample.php`
+
+Baking test fixture for Samples...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/tests/Fixture/SamplesFixture.php
+Wrote `/Applications/MAMP/htdocs/mycakeprj/tests/Fixture/SamplesFixture.php`
+Bake is detecting possible fixtures...
+
+Baking test case for App\Model\Table\SamplesTable ...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/tests/TestCase/Model/Table/SamplesTableTest.php
+Wrote `/Applications/MAMP/htdocs/mycakeprj/tests/TestCase/Model/Table/SamplesTableTest.php`
+
+Baking controller class for Samples...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Controller/SamplesController.php
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Controller/SamplesController.php`
+Bake is detecting possible fixtures...
+
+Baking test case for App\Controller\SamplesController ...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/tests/TestCase/Controller/SamplesControllerTest.php
+Wrote `/Applications/MAMP/htdocs/mycakeprj/tests/TestCase/Controller/SamplesControllerTest.php`
+
+Baking `index` view template file...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/index.ctp
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/index.ctp`
+
+Baking `view` view template file...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/view.ctp
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/view.ctp`
+
+Baking `add` view template file...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/add.ctp
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/add.ctp`
+
+Baking `edit` view template file...
+
+Creating file /Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/edit.ctp
+Wrote `/Applications/MAMP/htdocs/mycakeprj/src/Template/Samples/edit.ctp`
+Bake All complete.
